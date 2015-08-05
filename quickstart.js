@@ -159,19 +159,19 @@ function listLabels(auth) {
   
                     }
 
-                if(response.payload.parts[k].mimeType=='text/plain'){
-                       console.log('**************************************************************');
-                        fs.writeFile("./t"+Date.now()+'_'+k+'.txt', base64url.decode(response.payload.parts[k].body.data), function(err) {
-                            if(err) {
-                                return console.log(err);
-                            }
+                // if(response.payload.parts[k].mimeType=='text/plain'){
+                //        console.log('**************************************************************');
+                //         fs.writeFile("./t"+Date.now()+'_'+k+'.txt', base64url.decode(response.payload.parts[k].body.data), function(err) {
+                //             if(err) {
+                //                 return console.log(err);
+                //             }
 
-                            console.log("The file was saved!"+Date.now()+'_'+k);
-                        });                        
-                       console.log(base64url(response.payload.parts[k].body.data));
-                       console.log('**************************************************************');
+                //             console.log("The file was saved!"+Date.now()+'_'+k);
+                //         });                        
+                //        console.log(base64url(response.payload.parts[k].body.data));
+                //        console.log('**************************************************************');
   
-                    }    
+                //     }    
                }
               console.log('- %s', '------------------------------------------------------------------------------------------------------------------');
 

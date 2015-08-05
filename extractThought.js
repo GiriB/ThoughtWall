@@ -1,8 +1,15 @@
 var fs = require('fs');
-var pattern = /<strong>&#8220;[\n\w\s:<>\/,.]*&#8221;<\/strong>[\w\n\s<>\/\;,]*~[\w\s]*/;
+
+//this pattern matches the 'Thought' along with its author
+//var pattern = /<strong>&#8220;[\n\w\s:<>\/,.]*&#8221;<\/strong>[\w\n\s<>\/\;,]*~[\w\s]*/;
+var pattern = /<strong>[\w\d;:’\s.\/<,!'"&#“\-”>]*<\/strong>[\w\s<>\/,;\n]*~[\w\s-]*/;
+//this pattern matches all the html files
 var htmlfile = /^.*.html$/;
+
+//reading the directory
 var dir = fs.readdirSync('.');
-//console.log(dir);
+
+
 var file;
 
 var callBack = function (err,fd){
@@ -13,14 +20,23 @@ var callBack = function (err,fd){
 			}
 			else{
 				if(pattern.exec(fd.toString())!=null){
+					//pattern.exec(fd.toString())[0] is the relevent text (thought and the author)
+
 					console.log(pattern.exec(fd.toString())[0]);
+					//getThoughtandAuthor();
+
 
 				}else{
-					console.log("didn't match file " + dir[this.file]);
+					console.log("didn't match file ******************************************" + dir[this.file]);
 				}
 				
 			}
-		}
+		};
+
+var getThoughtandAuthor= function(text,callback) {
+
+
+};
 
 
 for (file in dir){
