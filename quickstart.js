@@ -147,7 +147,7 @@ function listLabels(auth) {
 
                 if(response.payload.parts[k].mimeType=='text/html'){
                        console.log('**************************************************************');
-                        fs.writeFile("./h"+Date.now()+'_'+k+'.html', base64url.decode(response.payload.parts[k].body.data), function(err) {
+                        fs.writeFile("./html/h"+Date.now()+'_'+k+'.html', base64url.decode(response.payload.parts[k].body.data), function(err) {
                             if(err) {
                                 return console.log(err);
                             }
