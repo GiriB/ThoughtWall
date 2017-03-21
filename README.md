@@ -12,7 +12,9 @@ Electron app that pulls subscribed ThoughtForToday from your Gmail and sets them
 
 
 
-1.You need to be subscribed to "Thought For Today" emailing list. You can subscribe here. https://feedburner.google.com/fb/a/mailverify?uri=homeinsteaders/KhCJ<br>
+1.You need to be subscribed to "Thought For Today" emailing list.[You can subscribe here](https://feedburner.google.com/fb/a/mailverify?uri=homeinsteaders/KhCJ).
+
+
 
 2.Now go do something else. Come back 2 days later (because you'll be receiving only an email a day :( )
 
