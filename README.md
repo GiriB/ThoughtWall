@@ -1,13 +1,15 @@
 
 #ThoughtWall
 ---
-AIM : Electron app that pulls subscribed ThoughtForToday from your Gmail and sets them as you wallpaper.
+#### AIM
 
-STATUS: incomplete 
+Electron app that pulls subscribed ThoughtForToday from your Gmail and sets them as you wallpaper.
 
-SO, CAN I USE IT RIGHT NOW ? : Well, Yes you can.But you have to execute some commands manually. 
 
-HOW TO USE ?
+[Read more here](https://giribhatnagar.wordpress.com/2015/09/12/daily-thought-for-today-wallpapers-for-mac/). 
+
+#### HOW TO USE?
+
 
 
 1.You need to be subscribed to "Thought For Today" emailing list. You can subscribe here. https://feedburner.google.com/fb/a/mailverify?uri=homeinsteaders/KhCJ<br>
