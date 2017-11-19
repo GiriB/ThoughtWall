@@ -48,4 +48,8 @@ Electron app that pulls subscribed ThoughtForToday from your Gmail and sets them
 5. `sh makeWallFile.sh quote/filename.txt`
 
     Pick any random file from quote. The quote from the file will be set as your desktop wallpaper.
-              
+          
+
+The email: ![from ThoughtForTheDay](https://user-images.githubusercontent.com/6178383/32988837-6937dae6-cd32-11e7-979c-61ecfca686a9.png)
+
+Final Wallpaper On My Mac: ![Wallpaper](https://user-images.githubusercontent.com/6178383/32988838-6aa593fa-cd32-11e7-81f8-9592d532efbe.png)
